@@ -49,10 +49,10 @@ public class ObstacleSpawner : MonoBehaviour
         }
     }
 
-    void SpawnObstacle()
+    private void SpawnObstacle()
     {
-        int random = Random.Range(0,obstacles.Length);
+        int random = Random.Range(0, obstacles.Length);
 
-        Instantiate(obstacles[random],transform.position,Quaternion.identity);
+        Instantiate(obstacles[random], transform.position, Quaternion.identity);
     }
 }
