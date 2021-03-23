@@ -19,13 +19,10 @@ public class ObstacleSpawner : MonoBehaviour
             instance = this;
         }
     }
-
-    // Start is called before the first frame update
     void Start()
     {
         StartCoroutine("Spawn");
     }
-
 
     IEnumerator Spawn()
     {
@@ -37,7 +34,7 @@ public class ObstacleSpawner : MonoBehaviour
         {
             SpawnObstacle();
             
-            waitTime = Random.Range(minSpawnTime,maxSpawnTime);
+            waitTime = Random.Range(minSpawnTime, maxSpawnTime);
 
             yield return new WaitForSeconds(waitTime);
         }
