@@ -8,7 +8,6 @@ public class PlayerController : MonoBehaviour
     bool grounded;
     bool gameOver = false;
 
-
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
